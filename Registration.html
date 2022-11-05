@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <link rel="icon" href="kp.png">
+        <title>Job Portal</title>
+    </head>
+    <body>        
+        <form action="Registration.php" method="POST" enctype="multipart/form-data">
+            <h1>Register Yourself</h1>
+
+            <input type="text" class="name" name="name" pattern="[a-zA-Z]" Placeholder="Name" required>
+
+            <input type="number" class="mobile" name="mobile" Placeholder="Mobile No." pattern="[0-9]" maxlength="10" required><br>
+            
+            <input type="text" class="uname" name="username" Placeholder="Username" required><br>
+            
+            <input type="text" class="email" name="email" Placeholder="Email Id " required><br>
+                        
+            <input type="password" class="pass" name="password" Placeholder="Password" required>
+            
+            <input type="password" class="cpass" name="cpassword" Placeholder="Confirm Password" required><br><br>
+
+            <label for="Jobs">Jobs</label>
+
+            <select name="jobs" id="jobs">
+                <option value="">--Select your job--</option>
+                <option value="Delivery Manager">Delivery Manager</option>
+                <option value="Program Manager">Program Manager</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="System Engineer">System Engineer</option>
+                <option value="Technical Lead">Technical Lead</option>
+                <option value="Technology Analyst">Technology Analyst</option>
+            </select><br><br>
+           
+            <label for="">Upload Resume/ CV:</label>
+            <input type="file" name="file" class="file" required>
+        </select>
+            <a class="home" href="IT.html">HOME</a>
+            <input type="submit" class="submit" name="submit" value="Register">
+        </form>
+    </body>
+<style>
+#home{
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(155, 18, 197);
+}
+#home:hover{
+    background-color: rgb(133, 12, 170);
+}
+
+body{
+    background-image: url('images/1.jpeg');
+}
+
+form{
+    height:500px;
+    width: 450px;
+    border: 1.8px solid rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 50rem;
+    margin-top: 70px;
+    background-color: #fff;
+    
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.name{
+    width: 190px;
+    font-size: 15px;
+    border:none;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+    margin-right: px;
+}
+.mobile{
+    width: 190px;
+    font-size: 15px;
+    border:none;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.uname{
+    font-size: 15px;
+    margin-top: 20px;
+    border:none;
+    width: 383px;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.email {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:none;
+    width: 383px;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.file {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+.pass{
+    
+    width: 190px;
+    font-size: 15px;
+    border:none;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.cpass{
+    width: 190px;
+    font-size: 15px;
+    border:none;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.address{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border:none;
+    width: 383px;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+    outline:none;
+}
+.home{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(0, 60, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight:600;
+}
+.Login:hover{
+    color: rgb(110, 160, 236);
+}
+.submit{
+    margin-right: 15px;
+    float: right;
+    color: #fff;
+    font-weight: bolder;
+    background-color: rgb(0, 132, 255);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 80px;
+}
+.submit:hover{
+    background-color:rgb(0, 174, 255);
+}
+#select{
+    font-size:15px;
+    width: 383px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(63, 53, 53, 0.596);
+}
+
+.conttainer{
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+#slct1{
+    float: left;
+}
+
+#slct2{
+    float: left;
+}
+
+.f-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+
+select{
+    border: 1px solid #555;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+
+
+</style>
+</html>
